@@ -1,0 +1,103 @@
+
+ .header{
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    margin: 10px;
+    @media screen and (min-width: 900px)  {
+    width:100%;
+    height: 80px;
+    }
+    
+
+.headerBox1{
+    width: 100%;
+    height: 80px;
+}
+.headerBox1 img {
+   padding: 30px 0px 0px 40px;
+}
+.headerBox2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.Nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+    padding: 10px 5px 0px 5px;
+    gap: 15px;
+    color: white;
+    flex: 5;
+    }
+.headerBox3{
+    width: 100%;
+    height: 80px;
+   
+    flex: 1;
+    padding: 35px 0px 0px 10px;
+    }
+.headerBox4{
+    width: 100%;
+    height: 80px;
+   flex: 2;
+   padding: 35px 44px 0px 0px;
+  
+}
+.headerBox4 button{
+    width: 100%;
+    background-image: linear-gradient(to right, #FFBA00 , #FF2542);
+    color: white;
+    padding: 0px 25px 0px 25px;
+    border-radius: 25px;
+}
+
+.ant-tooltip-inner, 
+.ant-tooltip-arrow-content {
+  background-color: transparent !important; 
+  
+}
+
+.ant-btn-circle {
+  background-color: transparent !important; 
+  color: aliceblue;
+}
+.label{
+    float: right;
+}
+.simenu{
+   padding: 20px 150px 0px 0px;
+   font-size: 20px;
+    color: white;
+    @media screen and (min-width: 900px){
+    display: none;
+    }
+}
+.drawer  {
+    background-image: url(../../../asset/frame.png);
+    color: white;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .headerBox2 {
+      display: none;
+    }
+    .simenu{
+        display: block;
+    }
+
+}}
+
+ @media screen and (min-width: 900px) {
+    .simenu{
+     width: 100%;
+     display: none;
+     
+    }
+  }

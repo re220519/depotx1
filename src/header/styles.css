@@ -1,0 +1,106 @@
+
+.headerquote {
+    width: 100%;
+    font-size: 46px;
+    background: linear-gradient(to right, #FFBA00, #FF2542);
+   line-height: 1;
+   font-weight: 500;
+    background-clip: text;
+    color: transparent; 
+    font-family: 'Montserrat';
+  }
+  .headerpara{
+   width: 100%;
+   line-height: 40px;
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+
+.line{
+    line-height: 6px;
+}
+
+.ant-form {
+    width: 25%; 
+    
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: -270px;
+    background-color: white;
+    
+  }
+  
+  
+ 
+  .ant-form-item {
+    margin-bottom: 0px;
+    
+     } 
+    
+  .ant-form-item-label {
+    text-align: left; 
+    display: block;
+    
+    
+  }
+  
+ 
+  .ant-form-item-control-input{
+    
+  }
+
+
+    .ant-form-item-control-textarea {
+    width: 100%; 
+
+    display: block;
+    
+  }
+  /* styles.css */
+
+
+  
+.input-container input {
+   border: none;
+    background-color: #E6E6E6;
+    width: 100%;
+  }
+
+  .input-container textarea {
+    border: none;
+    background-color: #E6E6E6;
+    }
+  
+  .headerBox button{
+    width: 100%;
+    background-image: linear-gradient(to right, #FFBA00 , #FF2542);
+    color: white;
+    padding: 0px 25px 0px 25px;
+    border-radius: 25px;
+}
+@media screen and (max-width: 1192px) {
+    .headerquote{
+        font-size: 20px;
+    }
+    .ant-form{
+        width: 20%;
+        margin-top: -200px;
+    }
+    .headerpara1{
+        font-size: 10px;
+        
+    }
+    .line{
+        line-height: 6px;
+    }
+    .ant-form-item-label label {
+        font-size: 9px; 
+      }
+}
+@media screen and (max-width: 900px) {
+    .ant-form{
+        display: none;
+    }
+}
