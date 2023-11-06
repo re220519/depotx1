@@ -1,7 +1,7 @@
 
  .header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     z-index: 1000;
     position: fixed;
     display: flex;
@@ -14,15 +14,22 @@
 
 .headerBox1{
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 .headerBox1 img {
-   padding: 30px 0px 0px 40px;
+    padding: 30px 0px 0px 40px;
+    @media screen and (max-width: 522px) {
+        padding: 10px 0px 0px 5px;
+    }
+    @media screen and (min-width: 522px) and (max-width: 900px) { 
+      padding: 10px 0px 0px 10px;
+    }
 }
 .headerBox2{
     width: 100%;
     height: 80px;
     display: flex;
+    gap:3px;
 }
 .Nav{
     width: 100%;
@@ -42,20 +49,26 @@
     flex: 1;
     padding: 35px 0px 0px 10px;
     }
+
+    
+      
 .headerBox4{
     width: 100%;
     height: 80px;
    flex: 2;
-   padding: 35px 44px 0px 0px;
-  
+   padding: 35px 34px 0px 0px;
+  outline: #FFBA00;
+  border: #FFBA00;
 }
 .headerBox4 button{
     width: 100%;
     background-image: linear-gradient(to right, #FFBA00 , #FF2542);
-    color: white;
+    color: white !important;
     padding: 0px 25px 0px 25px;
     border-radius: 25px;
+    
 }
+
 
 .ant-tooltip-inner, 
 .ant-tooltip-arrow-content {
@@ -71,23 +84,30 @@
     float: right;
 }
 .simenu{
-   padding: 20px 150px 0px 0px;
+    width: 100%;
+   padding: 16px 0px 0px 60px;
    font-size: 20px;
     color: white;
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900){
     display: none;
     }
+    @media screen and (max-width: 522px) {
+        padding: 7px 0px 0px 250px;
+    }
 }
+
 .drawer  {
-    background-image: url(../../../asset/frame.png);
+    
     color: white;
     
 }
 
 @media screen and (max-width: 900px) {
+    
     .headerBox2 {
-      display: none;
+       display: none;
     }
+    
     .simenu{
         display: block;
     }
@@ -100,4 +120,15 @@
      display: none;
      
     }
+  }
+  @media screen and (max-width: 522px) {
+    .logo{
+       width: 90%;
+    }
+    
+  }
+@media screen and (min-width: 522px) and (max-width: 899px) { 
+   .logo{
+    width: 50%;
+   }
   }

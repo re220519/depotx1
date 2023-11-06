@@ -4,14 +4,14 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Button, Tooltip} from 'antd';
 import logo from "../../../asset/logo.png";
 import {  Drawer } from 'antd';
-import { SlMenu } from "react-icons/sl";
+import {AiOutlineMenu } from "react-icons/ai";
 function Navbar() {
     const [open, setOpen] = useState(false); 
   return( 
  <>   
  <div className="header">
     <div className="headerBox1">
-        <img className="logo" src={ logo} alt=""/>
+        <img className="logo" src={ logo} alt=" "/>
     </div>
     <div className="headerBox2">
         <div className="Nav">
@@ -26,17 +26,17 @@ function Navbar() {
         </div>
         <div className="headerBox3">
              <Tooltip title="search">
-               <Button shape="circle"  icon={<SearchOutlined />} />
+               <Button shape="circle"   icon={<SearchOutlined />} />
             </Tooltip>
         </div>
         <div className="headerBox4">
-             <Button type="text" ghost>Get Quote</Button>
+             <Button type="text" ghost disabled>Get Quote</Button>
         </div>
-        
+       
     </div>
-    <div className="simenu" onClick={()=>setOpen(true) }> <SlMenu /></div> 
+    <div className="simenu" onClick={()=>setOpen(true) }> <AiOutlineMenu /></div>        
  </div>
- <Drawer className="drawer"  placement="right" onClose={()=>setOpen(false)} open={open} style={{ background: 'url(../../../asset/frame.png) center center / cover no-repeat', color: 'white' }}>
+ <Drawer className="drawer"  placement="right" onClose={()=>setOpen(false)} open={open} >
  <p>Home</p>
  <p>Services</p>
  <p>Tracking</p>

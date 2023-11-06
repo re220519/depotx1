@@ -1,17 +1,17 @@
 .homescreen-box1{
    width:100%;
-   height: 80px;
+   height: 100px;
    
 }
 .homescreen-box2{
     width:100%;
-    height: 80px;
+    height: 100px;
     
  }
 .homescreen-box3{
     width: 100%;
-    height: 80px;
-    top: 0;
+    height: 100px;
+    
     object-fit: cover;
     position: relative;
 }
@@ -26,20 +26,21 @@
    font-weight: 400px;
    font-family: 'YasevaOne', serif;
    word-spacing: 9px;
-   height: 80px;
+   height: 100px;
+   
 }
 .content-overlay {
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: absolute;
     top: 320px; /* Adjust as needed to vertically center your content */
-    left: 32%;
+    left: 30%;
     transform: translate(-50%, -50%);
     text-align: center; /* Center the text horizontally */
   }
   .helo span{
     width: 100%;
-    height: 80px;
+    height: 100px;
     font-size: 43px;
 font-weight: 400px;
 padding: 0px 16px;
@@ -55,71 +56,11 @@ color: white;
    
 }
 .sc{
+    width: 100%;
+    height: 100px;
    margin-left: 115%;
    background-color: #F5F5F5;
    color: #BBBBBB;
    
 }
-@media screen and (max-width: 900px) { 
-.helo{
-   
-    font-size: 31px;
-}
-.helo span{
-font-size: 20px;
-}
 
-
-.content-overlay{
-    top:220px;
-}
-    }
-    @media (min-width: 900px) and (max-width:1192px) { 
-        .helo{
-            font-size: 45px;
-        }
-        .helo span{
-            font-size: 30px;
-        }
-        .content-overlay{
-            top: 220px;
-        }
-        
-     }  
-     .custom-form-item {
-        float: right;
-        width: 20%;
-        margin-top: -250px;
-        
-    }
-    .custom-form-item .ant-form-item-label {
-        
-       
-      }
-      .custom-form-item .ant-form-item-control-input {
-       
-      }
-      @media screen and (max-width: 900px) {
-        .headerBox8{
-            
-            display: block;
-           width: 100%;
-            height: 80px;
-           padding: 10px 0px 0px 0px;
-           margin-top: -30px;
-          
-        }
-        .headerBox8 button{
-           width: 15%;
-            background-image: linear-gradient(to right, #FFBA00 , #FF2542);
-            color: white;
-            padding: 0px 2px 0px 2px;
-            border-radius: 25px;
-        }
-        
-      }
-      @media (min-width: 900px) and (max-width:1800px) { 
-        .headerBox8{
-            display: none;
-        }
-      }
