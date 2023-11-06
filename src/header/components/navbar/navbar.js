@@ -4,7 +4,7 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Button, Tooltip} from 'antd';
 import logo from "../../../asset/logo.png";
 import {  Drawer } from 'antd';
-import {AiOutlineMenu } from "react-icons/ai";
+import { SlMenu } from "react-icons/sl";
 function Navbar() {
     const [open, setOpen] = useState(false); 
   return( 
@@ -21,7 +21,7 @@ function Navbar() {
             <div>Products</div>
             <div>Contact</div>
             <div>Partner/Vendor</div>
-            <div onClick={()=>setOpen(true) }>Login </div>
+            <div>Login </div>
             
         </div>
         <div className="headerBox3">
@@ -32,9 +32,9 @@ function Navbar() {
         <div className="headerBox4">
              <Button type="text" ghost disabled>Get Quote</Button>
         </div>
-       
+        <div className="simenu" onClick={()=>setOpen(true) }> <SlMenu /></div>       
     </div>
-    <div className="simenu" onClick={()=>setOpen(true) }> <AiOutlineMenu /></div>        
+         
  </div>
  <Drawer className="drawer"  placement="right" onClose={()=>setOpen(false)} open={open} >
  <p>Home</p>
