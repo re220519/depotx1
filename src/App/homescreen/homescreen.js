@@ -1,42 +1,66 @@
-import React from "react";
-import { useNavigate } from 'react-router-dom';
-import Navbar from "../../header/components/navbar/navbar";
-import Frame from "../../asset/frame.png";
-import './style.css';
-import MyForm from "../../header/form";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { Button } from "antd";
-
-function HomeScreen(){
-    const navigate = useNavigate();
-
-  const handleGetQuoteClick = () => {
-    // Navigate to the form page
-    navigate('/MyForm');
+import React ,{useState ,  useEffect} from "react";
+ import Frame from "../../asset/frame.png";
+ import Navbar from "../../header/components/navbar/navbar";
+ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+ import './style.css';
+ import { Button  ,Modal} from "antd";
+ import MyForm1 from "../../header/components/form1/form1.js";
+ import MyForm from '../../header/form';
+ 
+ function HomeScreen(){
+   const [isModalOpen, setIsModalOpen] = useState(false);
+ 
+   const showModal = () => {
+     setIsModalOpen(true);
+   };
+   const handleOk = () => {
+    setIsModalOpen(false);
   };
- return(
-    <>
-   <div className="homescreen-box1">
-    <div className="homescreen-box2">
-         <Navbar />
-         <div className="homescreen-box3">
-         
-           <img className="homescreenimg" src={ Frame } alt="" /> 
-           
-          
-           <div className="content-overlay">
-           {/* <h1 className="helo">Storage in  Dubai <br /> <span>Unlimited  storage  anywhere <br /> anytime at minimum cost.
-</span></h1> */}
-
-          </div>
-          </div>
-         </div>
-         </div>
-          
-         
-    
-   </>
- );
-}
-export default HomeScreen;
-
+  
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+ 
+ 
+   return(
+     <>
+     <div className="homescreen">
+       <div className="homescreenbox">
+         <div className="imagecontainer">
+              <img className="imgg" src={ Frame } alt=" " />
+              <div className="text-overlay">
+                  <div className="socialmd">
+                     <FaInstagram size={15} style={{ margin: '0 1px' }} /> <br />
+                     <FaFacebook size={15}  style={{ margin: '0 1px' } } /> <br />
+                     <FaTwitter size={15} style={{ margin: '0 1px' }} /><br />
+                     <FaLinkedin size={15} style={{ margin: '0 1px' }} /><br />
+                   </div>
+               </div>
+               <div className="header-overlay">
+                   <Navbar /> 
+               </div>
+           </div>
+           <div className="homescreenbox1">
+             <div className="homescreenbox2">
+                      <div className="leftcontent">
+                      <div className="homeScreen-Txt1">Storage in Dubai</div>
+                <div  className="homeScreen-Txt2">Unlimited storage anywhere</div>
+                <div  className="homeScreen-Txt3">anytime at minimum cost.</div>
+                <div className="homeScreen-Txt4">
+                  <Button onClick={showModal} ghost  >Get Quote</Button>
+                  <Modal title=" " open={ isModalOpen } onOk={handleOk} onCancel={handleCancel}footer={null} >
+                    <MyForm1 />
+                  </Modal>
+                </div>
+                      </div>
+ 
+                    <div className="rightform">  <MyForm /> </div>   
+             </div>
+           </div>
+       </div>
+ 
+     </div>
+     </>
+   );
+ }
+ export default HomeScreen;

@@ -1,0 +1,225 @@
+.warehouse{
+    width: 100%;
+    height: 700px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 0px 0px 10px 0px;
+}
+.warehouseheader {
+    width: 100%;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 0px 0px 0px 0px;
+  height: 200px;
+  background: linear-gradient(to right, #FFBA00, #FF2542);
+text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.warehouseheader1{
+    align-items: center;
+   height: 50px;
+}
+.logistics{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.logistics img{
+    width: 90%;
+    
+}
+.itemlist{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.list1{
+    padding: 20px 20px 0px 70px;
+    font-size: 16px;
+}
+.list2{
+    padding: 20px 70px 0px 20px;
+    font-size: 16px;
+}
+.row{
+   width: 100%;
+   height: 280px;
+   line-height:2;
+  
+ 
+}
+.roww{
+   padding: 5px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 90%;
+   background-color: #F2F2F2;
+   height: 150px;
+}
+.row1{
+   width: 100%;
+   height: 50px;
+    display: flex;
+   text-align: center;
+   gap: 5px;
+   margin: 0 auto;
+  justify-content: space-around;
+}
+.row2{
+   width:100%; 
+  height: 50px;
+    display: flex;
+   
+    margin: 0 auto;
+    justify-content: space-around;
+    gap:8px;
+   
+}
+.row3{
+   width: 100%;
+  height: 50px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+  justify-content: space-around;
+   
+    gap: 2px;
+}
+.row1button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3E2B21; 
+    font-size: 15px;
+    padding: 0px 0px 0px 5px;
+    text-align: center;
+    background-color: rgb(196, 191, 191);
+    gap: 7px;
+}
+.row1button:hover {
+    color: black;
+   border-color: transparent;
+   
+}
+.row1button:active {
+    color: black;
+   border-color: transparent;
+    border: none;
+    outline: none;
+}
+.row1button:hover span,
+.row1button:active span,
+.row1button:focus span {
+  color: inherit !important;
+  border: none !important;
+}
+
+
+ @media screen and (min-width: 900px) {
+   .warehouseheader{
+        width: 100%;
+        font-size:25px;
+    }
+    .row1button{
+        padding: 0px 10px 0px 10px;
+    }
+    .row2{
+        padding: 0px 10px 0px 10px;
+    }
+ }
+ @media screen and (min-width: 700px) and (max-width: 900px) {
+    .warehouse{
+        height: 550px;
+    }
+    .warehouseheader{
+        font-size: 22px;
+        height: 150px;
+    }
+    .list1{
+font-size: 12px;
+padding: 10px 10px 0px 50px;
+    }
+    .list2{
+font-size: 12px;
+padding: 10px 50px 0px 10px;
+    }
+    .row1button{
+        font-size: 12px;
+        gap: 4px;
+        margin: 0 auto;
+    }
+ }
+ @media screen and (min-width: 522px) and (max-width: 700px) { 
+    .warehouseheader{
+        font-size: 15px;
+        height: 100px;
+    }
+    .warehouse{
+        height: 480px;
+    }
+    .itemlist{
+        display: block;
+    }
+    .list2{
+        font-size: 11px;
+      padding: 0px 40px 0px 40px;
+    }
+    .list1{
+font-size: 11px;
+padding: 0px 40px 0px 40px;
+    }
+    .row1button{
+        font-size: 9px;
+        gap: 1px;
+        margin: 0 auto;
+        height: 15px;
+    }
+    .row1,.row2,.row3{
+        height: 30px;
+        
+    }
+    .roww{
+        height: 100px;
+        padding: 9px 0px 0px 0px;
+    }
+ }
+ @media screen and (max-width: 522px) {
+    .warehouseheader{
+        font-size: 15px;
+        height: 80px;
+    }
+    .warehouse{
+        height: 450px;
+    }
+    .itemlist{
+        display: block;
+    }
+    .list2{
+        font-size: 9px;
+      padding: 0px 40px 0px 40px;
+    }
+    .list1{
+font-size: 9px;
+padding: 0px 40px 0px 40px;
+    }
+    .row1,.row2,.row3{
+        height: 30px;
+        
+    } 
+    .roww{
+        height: 100px;
+        padding: 9px 0px 0px 0px;
+    }
+    .row1button{
+        font-size: 7px;
+        gap: 1px;
+        margin: 0 auto;
+        height: 15px;
+    }
+    
+ }

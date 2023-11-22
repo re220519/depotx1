@@ -1,0 +1,372 @@
+.footer{
+    width: 100%;
+    height: 410px;
+    background-color: #3E2B21;
+}
+.hr{
+    border-color : #FF950B;
+}
+.footer1{
+    width: 100%;
+    height: 300px;
+    padding: 60px 0px 0px 0px;
+}
+.footer2{
+    width:100%;
+}
+.footer3{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 1px;
+   
+}
+.footer11{
+
+    width: 80%;
+    display: flex;
+  justify-content: center;
+  height: 250px;
+  margin: 0 auto;
+    
+    justify-content: space-around;
+}
+.footer2{
+    width: 100%;
+    height: 20px;
+}
+.footer3{
+    width: 100%;
+    height: 80px;
+}
+.first{
+   
+    height: 400px;
+    
+  
+    
+}
+.first1{
+  
+
+background-color: #3E2B21;
+}
+.anttbutton1{
+    color: white;
+    border: none;
+    background-color: #3E2B21;
+    padding: 0px 12px 0px 0px;
+    
+}
+.anttbutton1.ant-btn:hover, .anttbutton1.ant-btn:focus {
+    color: black !important;
+    color: white !important;
+    border: none;
+  }
+  
+  .anttbutton1.ant-btn:focus, .anttbutton1.ant-btn:active {
+    border-color: black !important;
+    box-shadow: 0 0 0 0px black !important;
+    color: white !important;
+    border: none;
+  }
+.mailicon{
+    color: #FF950B;
+     padding: 0px 0px 0px 0px;
+}
+.email{
+ 
+}
+.second{
+    background-color: #3E2B21;
+    color: white;
+    padding: 0px 50px;
+    
+}
+.social {
+    gap: 23px;
+   padding: 10px 0px 0px 0px;
+}
+.logosocial{
+    height: 120px;
+   
+}
+.logos1 logos{
+   
+}
+.Emails{
+    height: 180px;
+    line-height: 1.5px;
+    background-color: #3E2B21;
+   
+}
+.second1{
+  display: block; 
+line-height: 2.3;
+}
+.srvces{
+ font-weight:  bold;
+}
+.features{
+    font-weight: bold;
+}
+.third{
+    background-color: #3E2B21;
+    color: white;
+    padding: 0px 50px;
+    
+}
+.third1{
+    display: block; 
+  line-height: 1.8;
+  }
+.copyright{
+    font-size: 14px;
+    color: white;
+
+    
+  }
+    @media (min-width: 700px) and (max-width:900px) { 
+        .footer{
+            height: 380px;
+        }
+        .footer1{
+            height: 250px;
+        }
+        .footer2{
+           height: 40px;
+        }
+        .footer3{
+height: 50px;
+        }
+        .footer11{
+           height: 200px; 
+        }
+        .first{
+            height: 200px;
+        }
+        .anttbutton1{
+            padding: 0px 8px 0px 0px;
+            font-size: 12px;
+        }
+        .mailicon{
+            font-size: 12px;
+        }
+        .second{
+            padding: 0 40px;
+        }
+        .social {
+            gap: 18px;
+           padding: 1px 0px 0px 0px;
+        }
+        .logosocial{
+            height: 80px;
+        }
+        .Emails{
+            height: 100px;
+            line-height: 1;
+           
+           }
+       
+        .logos{
+            width: 70%;
+        }
+        .second1{
+          
+        line-height: 1.9;
+        }
+        .third{
+           
+           
+            padding: 0px 20px;
+            
+        }
+        .third1{
+            
+          line-height: 1.4;
+          }
+        .copyright{
+            font-size: 12px;
+            
+        }
+        .featuresmenu{
+            font-size: 14px;
+        }
+        .srvcsmenu{
+            font-size: 14px;
+        }
+        .footer3{
+            line-height: 0;
+          
+        }
+        .copyright{
+            font-size: 10px;
+        }
+    }
+    @media (min-width: 522px) and (max-width:700px) { 
+        .footer{
+            height: 350px;
+        }
+        .footer1{
+            height: 230px;
+        }
+        .footer2{
+           height: 30px;
+        }
+        .footer3{
+height: 40px;
+        }
+        .footer11{
+           height: 180px; 
+        }
+        .first{
+            height: 170px;
+        }
+        .anttbutton1{
+            padding: 0px 6px 0px 0px;
+        }
+        .second{
+            padding: 0 35px;
+        }
+        .social {
+            gap: 6px;
+           padding: 4px 0px 0px 0px;
+           margin: 0 2px;
+        }
+        .logosocial{
+            height: 50px;
+        }
+        .Emails{
+            height: 100px;
+            line-height: 0.5;
+          
+           
+        }
+        .second1{
+          
+        line-height: 1.9;
+        }
+        .third{
+           
+           
+            padding: 0px 20px;
+            
+        }
+        .third1{
+            
+          line-height: 1.5;
+          }
+        .copyright{
+            font-size: 10px;
+            
+        }
+        .featuresmenu{
+            font-size: 11px;
+        }
+        .srvcsmenu{
+            font-size: 12px;
+        }
+        .srvces{
+            font-weight:  400;
+           }
+           .features{
+               font-weight: 400;
+           }
+           .anttbutton1{
+            font-size: 10px;
+            line-height: 0.5;
+           }
+           .email{
+             line-height: 0.5;
+           }
+           .logos1 img{
+            width: 50%;
+           }
+    } 
+    @media screen and (max-width: 522px) {
+        .footer{
+            height: 350px;
+        }
+        .footer1{
+            width: 100%;
+            height: 230px;
+        }
+        .footer2{
+           height: 30px;
+        }
+        .footer3{
+height: 40px;
+        }
+        .footer11{
+           height: 180px; 
+        }
+        .first{
+            width: 100%;
+            height: 330px;
+        }
+        .anttbutton1{
+            padding: 0px 6px 0px 0px;
+        }
+        .second{
+            width: 100%;
+            padding: 0 35px;
+        }
+        .social {
+            gap: 3px;
+           padding: 4px 0px 0px 0px;
+           margin: 0 2px;
+        }
+        .logosocial{
+            height: 90px;
+        }
+        .Emails{
+            height: 140px;
+            line-height: px;
+           width: 70%;
+           
+        }
+        .second1{
+          
+        line-height: 1.9;
+        }
+        .third{
+           
+           width: 100%;
+            padding: 0px 5px;
+            
+        }
+        .third1{
+            
+          line-height: 1.4;
+          }
+        .copyright{
+            font-size: 10px;
+            
+        }
+        .featuresmenu{
+            font-size: 11px;
+        }
+        .srvcsmenu{
+            font-size: 12px;
+        }
+        .srvces{
+            font-weight:  400;
+           }
+           .features{
+               font-weight: 400;
+           }
+           .anttbutton1{
+            font-size: 10px;
+            line-height: 1;
+           }
+           .email{
+             line-height: 1;
+           }
+           .logos1 img{
+            width: 60%;
+           }
+           .footer3{
+            height: 80px;
+            line-height: 0;
+           }
+    }

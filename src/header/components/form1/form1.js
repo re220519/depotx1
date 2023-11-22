@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Modal } from 'antd';
-import './styles.css'; // Don't forget to import your CSS file
+import './stylesf.css';
 
-const MyForm = ({ isVisible, onClose }) => {
+const MyForm1 = ({ isVisible, onClose }) => {
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
@@ -57,7 +57,7 @@ const MyForm = ({ isVisible, onClose }) => {
         </Form.Item>
         <Input.TextArea className="custom-inputl" style={{ height:'30px'}}  />
         <Form.Item className="custom-submit">
-          <Button type="text1" ghost disabled>Get Quote
+          <Button type="text1"  ghost disabled >Get Quote
              </Button>
         </Form.Item>
       </Form>
@@ -65,4 +65,4 @@ const MyForm = ({ isVisible, onClose }) => {
   );
 };
 
-export default MyForm;
+export default MyForm1;

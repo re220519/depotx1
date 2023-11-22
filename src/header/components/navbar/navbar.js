@@ -1,4 +1,4 @@
-import React ,{ useState  }from "react";
+import React ,{ useState, useEffect  }from "react";
 import './style.css';
 import { SearchOutlined } from '@ant-design/icons';
 import { Button, Tooltip} from 'antd';
@@ -6,9 +6,29 @@ import logo from "../../../asset/logo.png";
 import {  Drawer } from 'antd';
 import { SlMenu } from "react-icons/sl";
 function Navbar() {
-    const [open, setOpen] = useState(false); 
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+     
   return( 
- <>   
+ <>  
+  <div className={`header ${scrolled ? 'scrolled' : ''}`}>  
  <div className="header">
     <div className="headerBox1">
         <img className="logo" src={ logo} alt=" "/>
@@ -45,6 +65,7 @@ function Navbar() {
  <p >Partner/Vendor</p>
  <p>Login</p>
 </Drawer>
+</div>
 </>
   );
 }

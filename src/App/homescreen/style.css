@@ -1,66 +1,306 @@
-.homescreen-box1{
-   width:100%;
-   height: 100px;
-   
+
+.homescreen{
+  width: 100%;
+  height: 700px;
+  
 }
-.homescreen-box2{
-    width:100%;
-    height: 100px;
-    
+.homescreenbox{
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.imagecontainer {
+  width: 100%; 
+  height: 700px;
+  
+}
+.header-overlay{
+  width: 100%;
+  height: 700px;
+  
+}
+
+.imgg {
+  width: 100%; /* Image takes full width of its container */
+  height: 700px; /* Maintain the aspect ratio */
+}
+.text-overlay {
+  width: 3%; 
+  height: 20%;
+  position: absolute;
+  bottom: 5%;
+  
+  right: 0;
+  background: #F5F5F5;
+  padding: 10px 0px 5px 0px;
+  border-radius: 16px 0px 0px 16px ;
+  
+  
+}
+.socialmd{
+ position: absolute;
+  width: 100%; 
+    display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 4px;
+       background-color: #F5F5F5;
+       color: #BBBBBB;
+     
  }
-.homescreen-box3{
+ .header-overlay {
+  position: absolute;
+  top:0%;
+  width: 100%;
+    display: flex;
+ 
+  
+}
+.homescreenbox1{
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 0;
+ display: flex;
+ padding: 150px 0px 0px 0px;
+ 
+}
+.homescreenbox2{
+  width: 100%;
+  height: 700px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.left-content {
+  width: 50%;
+   height: 400px;
+   color: white;
+  }
+.homeScreen-Txt1{
+  width:100%;
+  color: white;
+    font-family: Yeseva One;
+    font-size: 51px;
+    padding-left: 170px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0em;
+} 
+.homeScreen-Txt2{
+  width: 100%;
+  color: white; 
+  font-family: 'YesevaOne';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 71px;
+  padding-left: 155px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+  .homeScreen-Txt3{
     width: 100%;
-    height: 100px;
+    color: white; 
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 71px;
+    padding-left: 155px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .homeScreen-Txt4{
+  text-align: center;
+    padding-left: 155px;
+    width: 100%;
+    height: 50px;
+   padding: 10px 0px 0px 70px;
+   @media Screen and (min-width: 900px) {
+    display: none;
+  } }
+  .homeScreen-Txt4 button{
     
-    object-fit: cover;
-    position: relative;
-}
-.homescreenimg{
-    width: 100%;
-    height: 100vh;
+    background-image: linear-gradient(to right, #FFBA00 , #FF2542);
+    color: #FFFFFF !important;
+    border-radius: 25px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    /*line-height: 18px;
+    letter-spacing: 0em;*/
+    
    
+   height:30px;
+   border: none;
 }
-.helo{
-    color: white;
-    font-size: 70px;
-   font-weight: 400px;
-   font-family: 'YasevaOne', serif;
-   word-spacing: 9px;
-   height: 100px;
-   
+.homeScreen-Txt4 button:hover{
+  color: #FFFFFF !important;
+    border: 1.5px solid orange !important;
 }
-.content-overlay {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 320px; /* Adjust as needed to vertically center your content */
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: center; /* Center the text horizontally */
+.rightform{
+  width: 50%;
+ padding: 60px 0px 0px 300px;
+      
+}
+@media screen and (min-width: 900px) { 
+  .homescreen{
+    height: 700px;
   }
-  .helo span{
-    width: 100%;
-    height: 100px;
-    font-size: 43px;
-font-weight: 400px;
-padding: 0px 16px;
-word-spacing: 13px;
-color: white;
+  .homescreenbox{
+    height: 700px;
+  }
+  .homescreenbox1{
+    height: 700px;
+  }
+  .imagecontainer{
+    height: 700px;
+  }
+  imgg{
+    height: 700px;
+  }
+  
+  .homeScreen-Txt1{
+    
+    line-height: 51px;
+    padding-left: 170px;
+  }
+  .homeScreen-Txt2{
+    
+    line-height: 71px;
+    padding-left: 155px;
+  }
+  .homeScreen-Txt3{
+    
+    line-height: 71px;
+    padding-left: 155px;
+  }
+  .homescreenbox1{
+    padding: 70px 0px 0px 0px;
+  }
+  .homescreenbox2{
+    height: 700px;
+  }
+  .homescreenbox3{
+    height: 700px;;
+  }
+ 
+  .header-overlay{
+   height: 700px;
+  }
+  .rightform{
+    width: 50%;
+  }
+  .socialmd{
+    
+  }
+}
 
-  }
-  .form{
-    float: right;
-  }
-.socialmedia {
-  margin-left: 100%;
-   
-}
-.sc{
-    width: 100%;
-    height: 100px;
-   margin-left: 115%;
-   background-color: #F5F5F5;
-   color: #BBBBBB;
-   
-}
 
+  @media (min-width: 522px) and (max-width:900px) {
+    
+     .homescreen{
+      height: 500px;
+    }
+    .homescreenbox{
+      height: 500px;
+    }
+    .imagecontainer{
+      height: 500px;
+    }
+    .homescreenbox1{
+      height: 500px;
+      padding: 0px 0px 0px 0px;
+     }
+     .homescreenbox2{
+      height: 500px;
+     }
+     .homeScreen-Txt1{
+       font-size: 31px;
+       line-height: 31px;
+       padding-left: 60px;
+     }
+     .homeScreen-Txt2{
+       font-size: 24px;
+       line-height: 41px;
+       padding-left: 60px;
+     }
+     .homeScreen-Txt3{
+       font-size: 24px;
+       line-height: 41px;
+       padding-left: 60px;
+     }
+     .header-overlay{
+      height: 500px;
+     }
+     .imgg{
+      height: 500px;
+     }
+ .rightform{
+  display: none;
+ }
+ .text-overlay{
+  height: 30%;
+ }
+ .left-content{
+  padding: 0px 0px 40px 0px;
+ }
+ .homeScreen-Txt4{
+  padding: 0px 0px 0px 10px;
+  
+ }
+  }
+  @media screen and (max-width: 522px) { 
+    .homescreen{
+      height: 500px;
+    }
+    .homescreenbox{
+      height: 500px;
+    }
+    .imagecontainer{
+      height: 500px;
+    }
+    .homescreenbox1{
+      height: 500px;
+      padding: 0px 0px 0px 0px;
+     }
+     .homescreenbox2{
+      height: 500px;
+     }
+     .homeScreen-Txt1{
+       font-size: 31px;
+       line-height: 31px;
+       padding-left: 60px;
+     }
+     .homeScreen-Txt2{
+       font-size: 24px;
+       line-height: 41px;
+       padding-left: 60px;
+     }
+     .homeScreen-Txt3{
+       font-size: 24px;
+       line-height: 41px;
+       padding-left: 60px;
+     }
+     .header-overlay{
+      height: 500px;
+     }
+     .imgg{
+      height: 500px;
+     }
+ .rightform{
+  display: none;
+ }
+ .text-overlay{
+  height: 30%;
+ }
+ .left-content{
+  padding: 0px 0px 30px 0px;
+ }
+ .homeScreen-Txt4{
+  padding: 0px 0px 0px 10px;
+ }
+   
+  } 
